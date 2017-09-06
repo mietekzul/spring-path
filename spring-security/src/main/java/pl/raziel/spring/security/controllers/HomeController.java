@@ -1,4 +1,4 @@
-package com.oreilly.security.web.controllers;
+package pl.raziel.spring.security.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -8,23 +8,19 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @RequestMapping("/")
 public class HomeController {
 
-	@RequestMapping(method=RequestMethod.GET)
-	public String goHome(){
-		return "home";
-	}
-	
-	@RequestMapping("/services")
-	public String goServices(){
-		return "services";
-	}
-	
-	@RequestMapping(value="/login", method=RequestMethod.GET)
-	public String goLogin(){
-		return "login";
-	}
-	
-	@RequestMapping("/schedule")
-	public String goSchedule(){
-		return "schedule";
-	}
+    @RequestMapping(method = RequestMethod.GET)
+    public String goHome() {
+        return "home";
+    }
+
+    @RequestMapping("/services")
+    public String goServices() {
+        return "services";
+    }
+
+    @RequestMapping("/login")
+    public String goLogin() {
+        return "login";
+    }
 }
+
