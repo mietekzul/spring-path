@@ -11,5 +11,6 @@
     <modules>
         <module>spring-security</module>
         <module>spring-data</module>
+        <module>spring-security-login-logout</module>
     </modules>
 </project>
