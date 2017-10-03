@@ -22,9 +22,3 @@ nbbuild/
 dist/
 nbdist/
 .nb-gradle/
-/SpringSecurityLoginTutorial/demo.iml
-
-
-/spring-boot/spring-boot-configuration/mvnw.cmd
-/spring-boot/spring-boot-configuration/mvnw
-/spring-boot/spring-boot-configuration/.mvn/
