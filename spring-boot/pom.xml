@@ -12,6 +12,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>spring-boot-configuration</module>
+        <module>spring-boot-web-test</module>
     </modules>
 
 

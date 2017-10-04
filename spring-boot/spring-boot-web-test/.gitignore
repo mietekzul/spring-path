@@ -22,9 +22,3 @@ nbbuild/
 dist/
 nbdist/
 .nb-gradle/
-/SpringSecurityLoginTutorial/demo.iml
-
-
-mvnw.cmd
-mvnw
-.mvn/
