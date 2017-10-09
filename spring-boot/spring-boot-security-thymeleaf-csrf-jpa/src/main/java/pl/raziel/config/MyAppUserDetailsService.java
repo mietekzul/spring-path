@@ -22,6 +22,7 @@ public class MyAppUserDetailsService implements UserDetailsService {
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         UserInfo activeUserInfo = userInfoRepository.findByUserNameAndEnabledIs(username, (short) 1);
+
         GrantedAuthority authority = new SimpleGrantedAuthority(activeUserInfo.getRole());
         UserDetails userDetails = new User(activeUserInfo.getUserName(), activeUserInfo.getPassword(), Arrays.asList(authority));
         return userDetails;

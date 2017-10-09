@@ -38,18 +38,18 @@ public class SpringBootSecurityThymeleafCsrfJpaApplication implements CommandLin
         mvc.setArticleId(3);
         mvc.setTitle("Spring MVC with Hibernate");
         mvc.setCategory("Spring");
-        Arrays.asList(java, hibernate, hibernate).forEach(e -> articleRepository.save(e));
+        Arrays.asList(java, hibernate, mvc).forEach(e -> articleRepository.save(e));
 
         UserInfo mukesh = new UserInfo();
         mukesh.setUserName("mukesh");
-        mukesh.setPassword("m123");
+        mukesh.setPassword("$2a$10$N0eqNiuikWCy9ETQ1rdau.XEELcyEO7kukkfoiNISk/9F7gw6eB0W");
         mukesh.setFullName("Mukesh Sharma");
         mukesh.setRole("ROLE_ADMIN");
         mukesh.setCountry("India");
         mukesh.setEnabled((short) 1);
         UserInfo tarun = new UserInfo();
         tarun.setUserName("tarun");
-        tarun.setPassword("t123");
+        tarun.setPassword("$2a$10$QifQnP.XqXDW0Lc4hSqEg.GhTqZHoN2Y52/hoWr4I5ePxK7D2Pi8q");
         tarun.setFullName("Tarun Singh");
         tarun.setRole("ROLE_USER");
         tarun.setCountry("India");

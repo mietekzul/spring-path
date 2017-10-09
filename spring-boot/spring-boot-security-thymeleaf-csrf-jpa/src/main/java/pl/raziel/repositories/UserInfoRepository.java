@@ -9,4 +9,6 @@ import pl.raziel.entity.UserInfo;
 @Transactional
 public interface UserInfoRepository extends JpaRepository<UserInfo, String> {
     UserInfo findByUserNameAndEnabledIs(String userName, short enabled);
+
+    UserInfo findByUserName(String userName);
 }

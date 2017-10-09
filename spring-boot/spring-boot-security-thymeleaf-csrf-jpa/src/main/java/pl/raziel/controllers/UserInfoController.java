@@ -21,7 +21,7 @@ public class UserInfoController {
         return mav;
     }
 
-    @GetMapping
+    @GetMapping("secure/article-details")
     public ModelAndView getAllUserArticles() {
         ModelAndView mav = new ModelAndView();
         mav.addObject("userArticles", userInfoService.getAllUserArticles());
@@ -32,7 +32,7 @@ public class UserInfoController {
     @GetMapping("error")
     public ModelAndView error() {
         ModelAndView mav = new ModelAndView();
-        String errorMessage = "You are not authorized for the requested data";
+        String errorMessage = "You are not authorized for the requested data.";
         mav.addObject("errorMsg", errorMessage);
         mav.setViewName("403");
         return mav;
