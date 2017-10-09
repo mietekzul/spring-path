@@ -10,5 +10,6 @@ import java.util.List;
 @Repository
 @Transactional
 public interface ArticleRepository extends JpaRepository<Article, Integer> {
-    List<Article> findAllOrOrderByArticleId();
+
+    List<Article> findAllByOrderByArticleIdDesc();
 }
