@@ -23,5 +23,6 @@
         <module>service-for-ribbon</module>
         <module>service-for-zuul</module>
         <module>zuul</module>
+        <module>oauth-server</module>
     </modules>
 </project>
